@@ -65,7 +65,11 @@
             public string Season(int month)
             {
                 // TODO : Return season based on month value
-                throw new NotImplementedException();
+                if (month == 1 || month == 2 || month == 12) return "winter";
+                else if (month == 3 || month == 4 || month == 5) return "spring";
+                else if (month == 6 || month == 7 || month == 8) return "summer";
+                else if (month == 9 ||month == 10 || month ==11) return "autumn";
+                else throw new NotImplementedException();
             }
             /// &lt;summary&gt;
             /// Determines if num is odd or even.
@@ -111,12 +115,12 @@
                 //app.FortuneCookie());
                 //Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
                 //app.FortuneCookie());
-                //Console.WriteLine();
-                //Console.WriteLine("&quot; Test season method & quot;");
-                //Console.WriteLine("&quot;=================== &quot;");
-                //Console.WriteLine("&quot; The month of March is in the & quot;" + app.Season(3));
-                //Console.WriteLine("&quot; The month of July is in the & quot;" + app.Season(7));
-                //Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Test season method");
+                Console.WriteLine("===================");
+                Console.WriteLine("The month of March is in the " + app.Season(3));
+                Console.WriteLine("The month of July is in the " + app.Season(7));
+                Console.WriteLine();
                 Console.WriteLine("Test evenOdd method");
                 Console.WriteLine("===================");
                 Console.WriteLine("The number 84 is " + app.EvenOdd(84));
