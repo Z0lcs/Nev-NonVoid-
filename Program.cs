@@ -22,7 +22,6 @@
             /// &lt;returns&gt;The sum of num1, num2, and num3&lt;/returns&gt;
             public int SumThree(int num1, int num2, int num3)
             {
-                // TODO : Implement sum of three numbers
                 return num1 + num2 + num3;
             }
             /// &lt;summary&gt;
@@ -33,8 +32,7 @@
             /// &lt;returns&gt;The smaller value&lt;/returns&gt;
             public int Smaller(int num1, int num2)
             {
-                // TODO : Implement minimum comparison
-                if (num1>num2) return num2;
+                if (num1 > num2) return num2;
                 else if (num2 > num1) return num1;
                 else return num1;
             }
@@ -52,7 +50,22 @@
             {
                 int num = new Random().Next(0, 5);
                 // TODO : Return fortune cookie response based on random number
-                throw new NotImplementedException();
+
+                switch (num)
+                {
+                    case 0:
+                        return "Your future looks bright";
+                    case 1:
+                        return "I see love in your future";
+                    case 2:
+                        return "Maybe you better stay home today";
+                    case 3:
+                        return "You will have fame and fortune";
+                    case 4:
+                        return "Happiness you will have";
+                    default:
+                        return "Bad luck, no fortune today!";
+                }
             }
             /// &lt;summary&gt;
             /// Returns a response depending upon month&#39;s value.
@@ -102,11 +115,11 @@
                 Console.WriteLine("Which is smaller 100 or 50 ? " + app.Smaller(100,
                 50));
                 Console.WriteLine();
-                Console.WriteLine("&quot; Test fortuneCookie method & quot;");
-                Console.WriteLine("&quot;========================= &quot;");
-                Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
+                Console.WriteLine("Test fortuneCookie method");
+                Console.WriteLine("=========================");
+                Console.WriteLine("Your fortune cookie says " +
                 app.FortuneCookie());
-                Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
+                Console.WriteLine("Your fortune cookie says " +
                 app.FortuneCookie());
                 Console.WriteLine();
                 Console.WriteLine("&quot; Test season method & quot;");
