@@ -2,9 +2,125 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public class NonVoid
         {
-            Console.WriteLine("Hello, World!");
+            //static void Main(string[] args)
+            //{
+            //    Console.WriteLine("Hello, World!");
+            //}
+            /// &lt;summary&gt;
+            /// Returns the square of num.
+            /// &lt;/summary&gt;
+            /// &lt;param name=&quot;num&quot;&gt;The number to be squared&lt;/param&gt;
+            /// &lt;returns&gt;The square of num&lt;/returns&gt;
+            public int Square(int num)
+            {
+                // TODO : Implement square calculation
+                throw new NotImplementedException();
+            }
+            /// &lt;summary&gt;
+            /// Returns the sum of num1, num2, and num3.
+            /// &lt;/summary&gt;
+            /// &lt;param name=&quot;num1&quot;&gt;First number in the sum&lt;/param&gt;
+            /// &lt;param name=&quot;num2&quot;&gt;Second number in the sum&lt;/param&gt;
+            /// &lt;param name=&quot;num3&quot;&gt;Third number in the sum&lt;/param&gt;
+            /// &lt;returns&gt;The sum of num1, num2, and num3&lt;/returns&gt;
+            public int SumThree(int num1, int num2, int num3)
+            {
+                // TODO : Implement sum of three numbers
+                throw new NotImplementedException();
+            }
+            /// &lt;summary&gt;
+            /// Returns the smaller value between num1 and num2.
+            /// &lt;/summary&gt;
+            /// &lt;param name=&quot;num1&quot;&gt;First number in minimum comparison&lt;/param&gt;
+            /// &lt;param name=&quot;num2&quot;&gt;Second number in minimum comparison&lt;/param&gt;
+            /// &lt;returns&gt;The smaller value&lt;/returns&gt;
+            public int Smaller(int num1, int num2)
+            {
+                // TODO : Implement minimum comparison
+                throw new NotImplementedException();
+            }
+            /// &lt;summary&gt;
+            /// Returns one of five fortune cookie responses chosen at random.
+
+            /// If the random number = 0 the method returns &quot;Your future looks bright;
+            /// If the random number = 1 the method returns &quot;I see love in your future;
+            /// If the random number = 2 the method returns &quot;Maybe you better stay home today;
+            /// If the random number = 3 the method returns &quot;You will have fame and fortune;
+            /// If the random number = 4 the method returns &quot;Happiness you will have;
+            /// &lt;/summary;
+            /// &lt;return;A string response&lt;/return;
+            public string FortuneCookie()
+            {
+                int num = new Random().Next(0, 5);
+                // TODO : Return fortune cookie response based on random number
+                throw new NotImplementedException();
+            }
+            /// &lt;summary&gt;
+            /// Returns a response depending upon month&#39;s value.
+            /// If month &gt;= 1 &amp;&amp; month &lt;= 3 it returns &quot;winter&quot;
+            /// If month &gt;= 4 &amp;&amp; month &lt;= 6 it returns &quot;spring&quot;
+            /// If month &gt;= 7 &amp;&amp; month &lt;= 9 it returns &quot;summer&quot;
+            /// If month &gt;= 10 &amp;&amp; month &lt;= 12 it returns &quot;fall&quot;
+            /// &lt;/summary&gt;
+            /// &lt;param name=&quot;month&quot;&gt;The numerical month of the year&lt;/param&gt;
+            /// &lt;returns&gt;A string response&lt;/returns&gt;
+            public string Season(int month)
+            {
+                // TODO : Return season based on month value
+                throw new NotImplementedException();
+            }
+            /// &lt;summary&gt;
+            /// Determines if num is odd or even.
+            /// If num is even it returns the string &quot;even&quot;;
+            /// otherwise it returns the string &quot;odd&quot;.
+            /// &lt;/summary&gt;
+            /// &lt;param name=&quot;num&quot;&gt;Number used in comparison&lt;/param&gt;
+            /// &lt;returns&gt;The string &quot;even&quot; or the string &quot;odd&quot;&lt;/returns&gt;
+            public string EvenOdd(int num)
+            {
+                // TODO : Determine if number is even or odd
+                throw new NotImplementedException();
+            }
+
+            public static void Main(string[] args)
+            {
+                NonVoid app = new NonVoid();
+                Console.WriteLine("Test square method");
+                Console.WriteLine("==================");
+                Console.WriteLine("The square of 5 is" + app.Square(5));
+                Console.WriteLine("The square of 12 is" + app.Square(12));
+                Console.WriteLine();
+                Console.WriteLine("Test sumThree method");
+                Console.WriteLine("====================");
+                Console.WriteLine("The sum of 10, 20, 30 is" + app.SumThree(10, 20, 30));
+                Console.WriteLine("&quot; The sum of 15, 100, 75 is &quot;" + app.SumThree(15,
+                100, 75));
+                Console.WriteLine();
+                Console.WriteLine("&quot; Test smaller method & quot;");
+                Console.WriteLine("&quot;==================== &quot;");
+                Console.WriteLine("&quot; Which is smaller 10 or 35 ? &quot;" + app.Smaller(10,
+                35));
+                Console.WriteLine("&quot; Which is smaller 100 or 50 ? &quot;" + app.Smaller(100,
+                50));
+                Console.WriteLine();
+                Console.WriteLine("&quot; Test fortuneCookie method & quot;");
+                Console.WriteLine("&quot;========================= &quot;");
+                Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
+                app.FortuneCookie());
+                Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
+                app.FortuneCookie());
+                Console.WriteLine();
+                Console.WriteLine("&quot; Test season method & quot;");
+                Console.WriteLine("&quot;=================== &quot;");
+                Console.WriteLine("&quot; The month of March is in the & quot;" + app.Season(3));
+                Console.WriteLine("&quot; The month of July is in the & quot;" + app.Season(7));
+                Console.WriteLine();
+                Console.WriteLine("&quot; Test evenOdd method & quot;");
+                Console.WriteLine("&quot;=================== &quot;");
+                Console.WriteLine("&quot; The number 84 is &quot;" + app.EvenOdd(84));
+                Console.WriteLine("&quot; The number 27 is &quot;" + app.EvenOdd(27));
+            }
         }
     }
-}
