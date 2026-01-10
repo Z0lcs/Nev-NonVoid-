@@ -77,46 +77,50 @@
             public string EvenOdd(int num)
             {
                 // TODO : Determine if number is even or odd
-                throw new NotImplementedException();
+                string ans = "";
+                if (num % 2 == 0) return ans = "even";
+                else return ans = "odd";
+                
+
             }
 
             public static void Main(string[] args)
             {
                 NonVoid app = new NonVoid();
-                Console.WriteLine("Test square method");
-                Console.WriteLine("==================");
-                Console.WriteLine("The square of 5 is" + app.Square(5));
-                Console.WriteLine("The square of 12 is" + app.Square(12));
-                Console.WriteLine();
-                Console.WriteLine("Test sumThree method");
-                Console.WriteLine("====================");
-                Console.WriteLine("The sum of 10, 20, 30 is" + app.SumThree(10, 20, 30));
-                Console.WriteLine("&quot; The sum of 15, 100, 75 is &quot;" + app.SumThree(15,
-                100, 75));
-                Console.WriteLine();
-                Console.WriteLine("&quot; Test smaller method & quot;");
-                Console.WriteLine("&quot;==================== &quot;");
-                Console.WriteLine("&quot; Which is smaller 10 or 35 ? &quot;" + app.Smaller(10,
-                35));
-                Console.WriteLine("&quot; Which is smaller 100 or 50 ? &quot;" + app.Smaller(100,
-                50));
-                Console.WriteLine();
-                Console.WriteLine("&quot; Test fortuneCookie method & quot;");
-                Console.WriteLine("&quot;========================= &quot;");
-                Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
-                app.FortuneCookie());
-                Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
-                app.FortuneCookie());
-                Console.WriteLine();
-                Console.WriteLine("&quot; Test season method & quot;");
-                Console.WriteLine("&quot;=================== &quot;");
-                Console.WriteLine("&quot; The month of March is in the & quot;" + app.Season(3));
-                Console.WriteLine("&quot; The month of July is in the & quot;" + app.Season(7));
-                Console.WriteLine();
-                Console.WriteLine("&quot; Test evenOdd method & quot;");
-                Console.WriteLine("&quot;=================== &quot;");
-                Console.WriteLine("&quot; The number 84 is &quot;" + app.EvenOdd(84));
-                Console.WriteLine("&quot; The number 27 is &quot;" + app.EvenOdd(27));
+                //Console.WriteLine("Test square method");
+                //Console.WriteLine("==================");
+                //Console.WriteLine("The square of 5 is" + app.Square(5));
+                //Console.WriteLine("The square of 12 is" + app.Square(12));
+                //Console.WriteLine();
+                //Console.WriteLine("Test sumThree method");
+                //Console.WriteLine("====================");
+                //Console.WriteLine("The sum of 10, 20, 30 is" + app.SumThree(10, 20, 30));
+                //Console.WriteLine("&quot; The sum of 15, 100, 75 is &quot;" + app.SumThree(15,
+                //100, 75));
+                //Console.WriteLine();
+                //Console.WriteLine("&quot; Test smaller method & quot;");
+                //Console.WriteLine("&quot;==================== &quot;");
+                //Console.WriteLine("&quot; Which is smaller 10 or 35 ? &quot;" + app.Smaller(10,
+                //35));
+                //Console.WriteLine("&quot; Which is smaller 100 or 50 ? &quot;" + app.Smaller(100,
+                //50));
+                //Console.WriteLine();
+                //Console.WriteLine("&quot; Test fortuneCookie method & quot;");
+                //Console.WriteLine("&quot;========================= &quot;");
+                //Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
+                //app.FortuneCookie());
+                //Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
+                //app.FortuneCookie());
+                //Console.WriteLine();
+                //Console.WriteLine("&quot; Test season method & quot;");
+                //Console.WriteLine("&quot;=================== &quot;");
+                //Console.WriteLine("&quot; The month of March is in the & quot;" + app.Season(3));
+                //Console.WriteLine("&quot; The month of July is in the & quot;" + app.Season(7));
+                //Console.WriteLine();
+                Console.WriteLine("Test evenOdd method");
+                Console.WriteLine("===================");
+                Console.WriteLine("The number 84 is " + app.EvenOdd(84));
+                Console.WriteLine("The number 27 is " + app.EvenOdd(27));
             }
         }
     }
