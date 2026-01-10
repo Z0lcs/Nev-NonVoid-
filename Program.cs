@@ -11,7 +11,6 @@
             /// returns The square of num returns;
             public int Square(int num)
             {
-                if (false) throw new NotImplementedException();
                 return num * num;
             }
             /// &lt;summary&gt;
@@ -24,7 +23,6 @@
             public int SumThree(int num1, int num2, int num3)
             {
                 // TODO : Implement sum of three numbers
-                if (false) throw new NotImplementedException();
                 return num1 + num2 + num3;
             }
             /// &lt;summary&gt;
@@ -36,8 +34,8 @@
             public int Smaller(int num1, int num2)
             {
                 // TODO : Implement minimum comparison
-                if (num1==num2) throw new NotImplementedException("A két szám egyenlő");
                 if (num1>num2) return num2;
+                else if (num2 > num1) return num1;
                 else return num1;
             }
             /// &lt;summary&gt;
