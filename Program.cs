@@ -24,7 +24,8 @@
             public int SumThree(int num1, int num2, int num3)
             {
                 // TODO : Implement sum of three numbers
-                
+                if (false) throw new NotImplementedException();
+                return num1 + num2 + num3;
             }
             /// &lt;summary&gt;
             /// Returns the smaller value between num1 and num2.
