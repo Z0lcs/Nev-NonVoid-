@@ -11,8 +11,7 @@
             /// returns The square of num returns;
             public int Square(int num)
             {
-                // TODO : Implement square calculation
-                throw new NotImplementedException();
+                return num * num;
             }
             /// &lt;summary&gt;
             /// Returns the sum of num1, num2, and num3.
@@ -23,8 +22,7 @@
             /// &lt;returns&gt;The sum of num1, num2, and num3&lt;/returns&gt;
             public int SumThree(int num1, int num2, int num3)
             {
-                // TODO : Implement sum of three numbers
-                throw new NotImplementedException();
+                return num1 + num2 + num3;
             }
             /// &lt;summary&gt;
             /// Returns the smaller value between num1 and num2.
@@ -34,9 +32,12 @@
             /// &lt;returns&gt;The smaller value&lt;/returns&gt;
             public int Smaller(int num1, int num2)
             {
-                // TODO : Implement minimum comparison
-                throw new NotImplementedException();
-            }
+                if (num1 > num2) return num2;
+                else if (num2 > num1) return num1;
+                else return num1;
+
+                //return Math.Min(num1, num2);
+        }
             /// &lt;summary&gt;
             /// Returns one of five fortune cookie responses chosen at random.
 
@@ -51,7 +52,22 @@
             {
                 int num = new Random().Next(0, 5);
                 // TODO : Return fortune cookie response based on random number
-                throw new NotImplementedException();
+
+                switch (num)
+                {
+                    case 0:
+                        return "Your future looks bright";
+                    case 1:
+                        return "I see love in your future";
+                    case 2:
+                        return "Maybe you better stay home today";
+                    case 3:
+                        return "You will have fame and fortune";
+                    case 4:
+                        return "Happiness you will have";
+                    default:
+                        return "Bad luck, no fortune today!";
+                }
             }
             /// &lt;summary&gt;
             /// Returns a response depending upon month&#39;s value.
@@ -91,30 +107,30 @@
             public static void Main(string[] args)
             {
                 NonVoid app = new NonVoid();
-                //Console.WriteLine("Test square method");
-                //Console.WriteLine("==================");
-                //Console.WriteLine("The square of 5 is" + app.Square(5));
-                //Console.WriteLine("The square of 12 is" + app.Square(12));
-                //Console.WriteLine();
-                //Console.WriteLine("Test sumThree method");
-                //Console.WriteLine("====================");
-                //Console.WriteLine("The sum of 10, 20, 30 is" + app.SumThree(10, 20, 30));
-                //Console.WriteLine("&quot; The sum of 15, 100, 75 is &quot;" + app.SumThree(15,
-                //100, 75));
-                //Console.WriteLine();
-                //Console.WriteLine("&quot; Test smaller method & quot;");
-                //Console.WriteLine("&quot;==================== &quot;");
-                //Console.WriteLine("&quot; Which is smaller 10 or 35 ? &quot;" + app.Smaller(10,
-                //35));
-                //Console.WriteLine("&quot; Which is smaller 100 or 50 ? &quot;" + app.Smaller(100,
-                //50));
-                //Console.WriteLine();
-                //Console.WriteLine("&quot; Test fortuneCookie method & quot;");
-                //Console.WriteLine("&quot;========================= &quot;");
-                //Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
-                //app.FortuneCookie());
-                //Console.WriteLine("&quot; Your fortune cookie says -&quot;" +
-                //app.FortuneCookie());
+                Console.WriteLine("Test square method");
+                Console.WriteLine("==================");
+                Console.WriteLine("The square of 5 is " + app.Square(5));
+                Console.WriteLine("The square of 12 is " + app.Square(12));
+                Console.WriteLine();
+                Console.WriteLine("Test sumThree method");
+                Console.WriteLine("====================");
+                Console.WriteLine("The sum of 10, 20, 30 is " + app.SumThree(10, 20, 30));
+                Console.WriteLine("The sum of 15, 100, 75 is " + app.SumThree(15,
+                100, 75));
+                Console.WriteLine();
+                Console.WriteLine("Test smaller method");
+                Console.WriteLine("====================");
+                Console.WriteLine("Which is smaller 10 or 35 ? " + app.Smaller(10,
+                35));
+                Console.WriteLine("Which is smaller 100 or 50 ? " + app.Smaller(100,
+                50));
+                Console.WriteLine();
+                Console.WriteLine("Test fortuneCookie method");
+                Console.WriteLine("=========================");
+                Console.WriteLine("Your fortune cookie says " +
+                app.FortuneCookie());
+                Console.WriteLine("Your fortune cookie says " +
+                app.FortuneCookie());
                 Console.WriteLine();
                 Console.WriteLine("Test season method");
                 Console.WriteLine("===================");
@@ -125,6 +141,7 @@
                 Console.WriteLine("===================");
                 Console.WriteLine("The number 84 is " + app.EvenOdd(84));
                 Console.WriteLine("The number 27 is " + app.EvenOdd(27));
+
             }
         }
     }
