@@ -11,8 +11,8 @@
             /// returns The square of num returns;
             public int Square(int num)
             {
-                // TODO : Implement square calculation
-                throw new NotImplementedException();
+                if (false) throw new NotImplementedException();
+                return num * num;
             }
             /// &lt;summary&gt;
             /// Returns the sum of num1, num2, and num3.
@@ -24,7 +24,7 @@
             public int SumThree(int num1, int num2, int num3)
             {
                 // TODO : Implement sum of three numbers
-                throw new NotImplementedException();
+                
             }
             /// &lt;summary&gt;
             /// Returns the smaller value between num1 and num2.
@@ -85,13 +85,13 @@
                 NonVoid app = new NonVoid();
                 Console.WriteLine("Test square method");
                 Console.WriteLine("==================");
-                Console.WriteLine("The square of 5 is" + app.Square(5));
-                Console.WriteLine("The square of 12 is" + app.Square(12));
+                Console.WriteLine("The square of 5 is " + app.Square(5));
+                Console.WriteLine("The square of 12 is " + app.Square(12));
                 Console.WriteLine();
                 Console.WriteLine("Test sumThree method");
                 Console.WriteLine("====================");
-                Console.WriteLine("The sum of 10, 20, 30 is" + app.SumThree(10, 20, 30));
-                Console.WriteLine("&quot; The sum of 15, 100, 75 is &quot;" + app.SumThree(15,
+                Console.WriteLine("The sum of 10, 20, 30 is " + app.SumThree(10, 20, 30));
+                Console.WriteLine("The sum of 15, 100, 75 is " + app.SumThree(15,
                 100, 75));
                 Console.WriteLine();
                 Console.WriteLine("&quot; Test smaller method & quot;");
