@@ -35,7 +35,9 @@
                 if (num1 > num2) return num2;
                 else if (num2 > num1) return num1;
                 else return num1;
-            }
+
+                //return Math.Min(num1, num2);
+        }
             /// &lt;summary&gt;
             /// Returns one of five fortune cookie responses chosen at random.
 
