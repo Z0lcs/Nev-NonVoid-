@@ -36,7 +36,9 @@
             public int Smaller(int num1, int num2)
             {
                 // TODO : Implement minimum comparison
-                throw new NotImplementedException();
+                if (num1==num2) throw new NotImplementedException("A két szám egyenlő");
+                if (num1>num2) return num2;
+                else return num1;
             }
             /// &lt;summary&gt;
             /// Returns one of five fortune cookie responses chosen at random.
@@ -95,11 +97,11 @@
                 Console.WriteLine("The sum of 15, 100, 75 is " + app.SumThree(15,
                 100, 75));
                 Console.WriteLine();
-                Console.WriteLine("&quot; Test smaller method & quot;");
-                Console.WriteLine("&quot;==================== &quot;");
-                Console.WriteLine("&quot; Which is smaller 10 or 35 ? &quot;" + app.Smaller(10,
+                Console.WriteLine("Test smaller method");
+                Console.WriteLine("====================");
+                Console.WriteLine("Which is smaller 10 or 35 ? " + app.Smaller(10,
                 35));
-                Console.WriteLine("&quot; Which is smaller 100 or 50 ? &quot;" + app.Smaller(100,
+                Console.WriteLine("Which is smaller 100 or 50 ? " + app.Smaller(100,
                 50));
                 Console.WriteLine();
                 Console.WriteLine("&quot; Test fortuneCookie method & quot;");
