@@ -4,15 +4,11 @@
     {
         public class NonVoid
         {
-            //static void Main(string[] args)
-            //{
-            //    Console.WriteLine("Hello, World!");
-            //}
-            /// &lt;summary&gt;
+            /// summary;
             /// Returns the square of num.
-            /// &lt;/summary&gt;
-            /// &lt;param name=&quot;num&quot;&gt;The number to be squared&lt;/param&gt;
-            /// &lt;returns&gt;The square of num&lt;/returns&gt;
+            /// summary;
+            /// param name=num The number to be squared param;
+            /// returns The square of num returns;
             public int Square(int num)
             {
                 // TODO : Implement square calculation
@@ -124,3 +120,4 @@
             }
         }
     }
+}
